@@ -1,13 +1,86 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+} */
+.myContent {
+  margin: auto;
+}
+.about {
+  /* width: 90%; */
+}
+.pizzaTypesWrapper {
+  width: 90%;
+  margin: auto;
+}
+
+/* corousel */
+.carousel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.caroWrap {
+  height: 85vh;
+  overflow: hidden;
+}
+
+.carousel img {
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0077cc;
+}
+
+.carousel .prev {
+  left: 0;
+}
+
+.carousel .next {
+  right: 0;
+}
+
+.carousel .order {
+  position: relative;
+  top: -20%;
+  padding: 10px 10px;
+  font-size: 24px;
+  border-radius: 5px;
+  border: none;
+  background-color: #1d2c76;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.carousel .order:hover {
+  background-color: #192667;
 }
